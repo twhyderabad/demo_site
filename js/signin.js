@@ -17,4 +17,5 @@ function validate() {
 if(localStorage.getItem("loggedOutVodqa") === '1') {
   document.getElementById("userName").value = "admin";
   document.getElementById("password").value = "admin";
+  localStorage.setItem("loggedOutVodqa", 0);
 }
