@@ -9,6 +9,12 @@ function professionSelected(select) {
 function validate() {
   var name = $("#name").val();
   var age = $("#age").val();
+  var age = $("#age").val();
+  if (age >81)
+  {
+  alert("Age should be lessthan 80");
+  return false;
+  }
   var experience = $('input[name=experience]:checked').val();
   var blogArea = $("#blogArea").val();
   var $profession = $("#profession");
