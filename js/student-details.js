@@ -12,7 +12,7 @@ function getStudents(){
 
 function showStudentMarks(index){
     localStorage.setItem('currentStudentIndex', index);
-    location.assign('/student-marks.html');
+    location.assign('student-marks.html');
 }
 
 function populateStudents() {
