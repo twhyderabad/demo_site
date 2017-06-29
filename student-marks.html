@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student-marks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js" charset="utf-8"></script>
+<script src="js/student-marks.js" charset="utf-8"></script>
+</head>
+
+
+    <p></p>
+<h1 style="color: #5e9ca0;" align="center">Enter Student Marks</h1>
+<p align="center" style="color: #5e5ede;">Name: <span id="name"></span></p>
+<p align="center" style="color: #5e5ede;">Class: <span id="class"></span></p>
+<p align="center" style="color: #5e5ede;">Roll No: <span id="roll-number"></span></p>
+    <form name="marks" action="/student-details.html">
+    <table class="table">
+    <tbody>
+    <tr>
+        <td>Subject</td>
+        <td>Maximum Marks</td>
+        <td>Accquired marks</td>
+    </tr>
+    <tr>
+        <td>Telugu</td>
+        <td>100</td>
+        <td><input name="telugu-marks" pattern="^(100|[1-9]|[0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>Hindi</td>
+        <td>100</td>
+        <td><input name="hindi-marks" pattern="^(75|[1-9]|[1-9])$"  placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>English</td>
+        <td>100</td>
+        <td><input name="english-marks" pattern="^(1000|[1-9]|[0-9][0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>Maths</td>
+        <td>100</td>
+        <td><input name="maths-marks" pattern="^(100|[1-9]|[0-9][0-9])$" placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>Science</td>
+        <td>100</td>
+        <td><input name="science-marks" placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>Social Studies</td>
+        <td>100</td>
+        <td><input name="social-marks" pattern="^(100|[1-9]|[0-9][0-9])$"  placeholder="Enter Marks" onchange="calculate()"/></td>
+    </tr>
+    <tr>
+        <td>Total marks</td>
+        <td>600</td>.
+        <td id="total-marks">123</td>
+    </tr>
+    <tr>
+        <td>Percentage</td>
+        <td>100</td>
+        <td id="percentage"></td>
+    </tr>
+    </tbody>
+</table>
+<p align="center"><input type="reset" class="btn btn-info" value="clear" /> <input type="submit" class="btn btn-primary" value="submit" /></p>
+</form>
+</html>
