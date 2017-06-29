@@ -12,6 +12,8 @@ function populateContent(){
     document.querySelector('#name').innerHTML = currentStudent.name;
     document.querySelector('#class').innerHTML = currentStudent.class;
     document.querySelector('#roll-number').innerHTML = currentStudent.rollNumber;
+    document.querySelector('#gender').innerHTML = currentStudent.gender;
+    console.log(currentStudent.gender);
 }
 
 onload = populateContent;
