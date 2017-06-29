@@ -15,5 +15,5 @@ function addStudentToStorage(student){
     localStorage.setItem('student'+numberOfStudentsAdded, JSON.stringify(student));
     localStorage.setItem('numberOfStudentsAdded', numberOfStudentsAdded);
     console.log('assigning');
-    location.assign("/student-details.html");
+    location.assign("student-details.html");
 }
