@@ -4,7 +4,7 @@ function validate() {
 
   if(username === "admin" && (password === "admin" || password === "Admin")) {
     localStorage.setItem("loggedOutVodqa", 0);
-    window.location.href = "Student-details.html";
+    window.location.href = "student-details.html";
   } else {
     var $errMsg = document.getElementById("errorMessage");
     $errMsg.style.display = "block";
