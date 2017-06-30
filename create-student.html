@@ -6,13 +6,12 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script src="bootstrap-3.3.7-dist/js/bootstrap.js" charset="utf-8"></script>
 <script src="js/create-student.js" charset="utf-8"></script>
-
+    </head>
 <h1 align="center" style="color: #5e9ca0;">Enter Student Details&nbsp;</h1>
 </br>
 
 <p align="center">Name*:&nbsp; <input id="name" name="name" pattern="^[a-zA-Z]*$"/></p>
-<form align="center" onsubmit="on_submit(); return false;">
-<!--<p>Class*&nbsp; <input id="class" name="class" pattern="\b(?=[MDCLXVI]+\b)M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})\b"/></p>-->
+<form  align="center" onsubmit="on_submit(); return false;">
 
         <p>Class*:&nbsp;
         <select class="btn btn-primary dropdown-toggle" id="class" name="class"  onchange="professionSelected(this)">
@@ -29,10 +28,11 @@
         </select>
         </p>
     <p>Roll No*:&nbsp; <input id="roll-number" name="rollNumber" pattern="^[0-9]*$"/></p>
-    <p>Gender*:&nbsp; <label class="radio-inline"><input type="radio" id="gender" value="Female" name="optradio">Female</label>
-        <label class="radio-inline"><input type="radio" id="gender" value="Male" name="optradio">Male</label>
-        <label class="radio-inline"><input type="radio"  id="gender" value="Others"name="optradio">Others</label></p>
-<input type='reset'  class="btn btn-info"  value ='clear'  > <input type='submit' class="btn btn-primary" value ='submit'>
+    <p>Gender*:&nbsp;
+    <label class="radio-inline"><input type="radio" name="gender" value="Female" >Female</label>
+    <label class="radio-inline"><input type="radio" name="gender" value="Male" >Male</label>
+    <label class="radio-inline"><input type="radio"  name="gender" value="Others">Others</label></p>
+<input type='reset'  class="btn btn-info"  value ='clear'> <input type='submit' class="btn btn-primary" value ='submit'>
 
 </form>
 </html>

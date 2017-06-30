@@ -3,7 +3,7 @@ function on_submit(){
     student.name = document.querySelector('#name').value;
     student.class = document.querySelector('#class').value;
     student.rollNumber = document.querySelector('#roll-number').value;
-    student.gender = document.querySelector('#gender').value;
+    student.gender = document.querySelector('form').gender.value;
     if(student.name && student.rollNumber)
         addStudentToStorage(student);
     else
