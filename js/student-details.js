@@ -32,7 +32,7 @@ function populateStudents() {
         row.insertCell(1).innerHTML = student.class;
         row.insertCell(2).innerHTML = student.rollNumber;
         row.insertCell(3).innerHTML = student.gender;
-        row.insertCell(4).innerHTML = "<a onclick='showStudentMarks("+ index +")'>Click here</a>";
+        row.insertCell(4).innerHTML = "<a onclick='showStudentMarks("+ (index + 1) +")'>Click here</a>";
     })
 }
 window.onload = populateStudents;
